@@ -144,7 +144,8 @@ class App extends Component {
   render() {
     const { store } = this.props;
     const showHeader = pagesWithHeader[store.modal.page];
-    const showSignup = store.settings && !store.settings.disable_signup;
+    // const showSignup = store.settings && !store.settings.disable_signup;
+    const showSignup = false;
     const page = pages[store.modal.page] || {};
     const pageLinkHandler = () => this.handlePage(page.link);
 
